@@ -65,20 +65,6 @@ namespace UserRegisteration.Controllers
             }
 
 
-            //var obj = JsonConvert.DeserializeObject(data);
-
-            //foreach (var item in ((JArray)obj))
-            //{
-
-            //        string.Format("id:{0}, postnr:{1}",
-            //            item.Value<int>("id"),
-            //            item.Value<string>("postnr"));
-            //}
-
-
-            //var postcodeList = JArray.Parse(data).
-
-
             var postcodeList = JArray.Parse(data).Select(p =>
                 new
                 {
